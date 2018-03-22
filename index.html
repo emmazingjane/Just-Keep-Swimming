@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="style/css" href="./syle.css">
+	<link href="main.css" rel="stylesheet" type="text/css" />
 
 	<script
 	 src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -21,11 +21,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
 	<title>Underwater Race</title>
 
 </head>
 <body>
-
 
 
 	<div id="myModal" class="modal fade" role="dialog">
@@ -41,20 +42,28 @@
 	        <ol>
 	        	<li>To make the Goldfish swim press the right arrow key</li>
 	        	<li>To make the Shark swim press the left arrow key</li>
-	        	<li>Press the keys repeatadly to move them across the screen</li>
-	        	<li>First player to cross the ocean wins!</li>
+	        	<li> Press the keys repeatadly to move them across the screen</li> 
+	        	<li> Timer starts when you close this window</li>
+	        	<li> First player to cross the ocean wins!</li>
 	        </ol></p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="starttimer">Close</button>
       </div>
     </div>
+
 
   </div>
 	</div>
 
-	<h1>Just Keep Swimming</h1>
+	<h1 id="heading">Just Keep Swimming</h1>
 
+	<span id="timer"></span>
+
+
+
+	    <div id="goldfish"><img src="img/goldfish.png"></div>
+     	<div id="shark"><img src="img/shark.png"></div>
 
 
 
